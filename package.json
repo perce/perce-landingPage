@@ -1,0 +1,29 @@
+{
+  "name": "perce",
+  "version": "0.0.1",
+  "description": "nice description text will follow",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.3.2",
+    "gulp-notify": "~0.2.0",
+    "gulp-stylus": "~0.0.9",
+    "gulp-util": "~2.2.9"
+  },
+  "devDependencies": {
+    "gulp-livereload": "~0.2.0",
+    "tiny-lr": "0.0.5",
+    "gulp-clean": "~0.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/perce/perce-landingPage.git"
+  },
+  "author": "christian haeringer, stefan judis, andré kussmann",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/perce/perce-landingPage/issues"
+  }
+}
