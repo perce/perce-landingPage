@@ -53,9 +53,45 @@
 
         <section>
             <h1>Stay tuned: sign up for our newsletter</h1>
-            <form action="#">
-                <input type="email" placeholder="your e-mail here">
+
+            <!-- Begin MailChimp Signup Form -->
+            <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css"> -->
+            <style>
+                input[type="submit"] {
+                    border: 2px solid #fff;
+                    color: #fff;
+                    background: none;
+                    padding: 3px 10px;
+                    margin-left: 40px;
+                    font-family: 'Gentium Basic', serif;
+                }
+
+                input[type="email"] {
+                    transition: border-color 1s linear;
+                    width: 50%;
+                }
+
+                #mc_embed_signup div.mce_inline_error {
+                    display: none !important;
+                }
+            </style>
+            <div id="mc_embed_signup">
+
+            <form action="http://perce.us3.list-manage.com/subscribe/post?u=6ae6fc59ca8723f4d3c492b39&amp;id=c5c0d65d3e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="your e-mail here *">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none; margin-top: 20px;"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input type="text" name="b_6ae6fc59ca8723f4d3c492b39_c5c0d65d3e" value=""></div>
             </form>
+            </div>
+            <!--End mc_embed_signup-->
+
         </section>
 
         <section>
@@ -79,6 +115,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="assets/scripts/plugins.js"></script>
         <script src="assets/scripts/main.js"></script>
+
+        <script src="assets/scripts/vendor/mailchimp.js"></script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
