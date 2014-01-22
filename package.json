@@ -7,14 +7,15 @@
     "gulp": "3.3.0",
     "gulp-notify": "~0.2.0",
     "gulp-stylus": "~0.0.9",
-    "gulp-util": "~2.2.9"
+    "gulp-util": "~2.2.9",
+    "gulp-jade": "~0.3.0"
   },
   "devDependencies": {
     "gulp-livereload": "~0.2.0",
     "tiny-lr": "0.0.5",
     "gulp-clean": "~0.2.2",
     "gulp-util": "~2.2.11",
-    "gulp": "~3.3.0"
+    "gulp": "~3.4.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

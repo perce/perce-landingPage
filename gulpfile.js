@@ -6,6 +6,7 @@ var stylus  = require('gulp-stylus');
 var refresh = require('gulp-livereload');
 var notify  = require('gulp-notify');
 var clean   = require('gulp-clean');
+var jade    = require('gulp-jade');
 var lr      = require('tiny-lr');
 var server  = lr();
 
@@ -20,6 +21,12 @@ gulp.task('stylus', function(){
     }));;
 });
 
+gulp.task('jade', function() {
+  gulp.src('./templates/*.jade')
+    .pipe(jade())
+    .pipe(gulp.dest('./public/'))
+});
+
 gulp.task('livereload', function(){
     server.listen(35729, function(err){
         if(err) return console.log(err);
@@ -32,9 +39,15 @@ gulp.task('livereload', function(){
 gulp.task('default', function(){
     gulp.run('livereload', 'stylus');
     gulp.run('stylus');
+    gulp.run('jade');
 
-    gulp.watch('./assets/styles/**/*.styl', function(event) {
+    gulp.watch('./assets/styles/**/*.styl', function() {
       gulp.run('stylus')
     });
+
+    gulp.watch('./templates/**/*.jade', function() {
+      gulp.run('jade')
+    });
+
 
 });
