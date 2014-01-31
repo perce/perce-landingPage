@@ -11,80 +11,63 @@ html(lang="en")
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:800', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Gentium+Basic', rel='stylesheet', type='text/css')
 
-    link(rel="stylesheet", href="styles/vendor/normalize.css")
-    link(rel="stylesheet", href="styles/vendor/h5bp.css")
     link(rel="stylesheet", href="styles/main.css")
   body
     // if lt IE 7
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     //<![endif]
+    header
+      div(class="pageWrapper clearfix")
+        nav
+          ul
+            li
+              a(href="#howItWorks") How it works
+            li
+              a(href="#feature") Features
+            li
+              a(href="whoWeAre") Who we are
+            li
+              a(href="#contact") Contact
+        a(href="http://perce.io", class="logo") Perce.io
 
-    div(class="pageWrapper")
-      h1 Hello world! This is our Landingpage.
-      h2 Simple. Powerful. Frontend performance metrics the easy way.
+    div(class="newsletterContainer")
+      div(class="pageWrapper")
+        svg(width=1000, height=400, id="promoSvg")
+        div(id="mc_embed_signup" class="newsletterBox")
+          p Stay tuned: sign up for our newsletter
+          form(action="http://perce.us3.list-manage.com/subscribe/post?u=6ae6fc59ca8723f4d3c492b39&amp;id=c5c0d65d3e", method="post", id="mc-embedded-subscribe-form", name="mc-embedded-subscribe-form", class="validate", target="_blank", novalidate)
+            div(class="mc-field-group")
+              input(type="email", value="", name="EMAIL", class="required email", id="mce-EMAIL", placeholder="your e-mail here *")
+              input(type="submit", value="Subscribe", name="subscribe", id="mc-embedded-subscribe", class="button")
+            div(id="mce-responses", class="clear")
+              div(class="response", id="mce-error-response", style="display:none")
+              div(class="response", id="mce-success-response", style="display:none; margin-top: 20px;")
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            div(style="position: absolute; left: -5000px;")
+              input(type="text",name="b_6ae6fc59ca8723f4d3c492b39_c5c0d65d3e", value="")
+          <!--End mc_embed_signup-->
+
+    main
+      div(class="pageWrapper")
+        h1 Hello world! This is our Landingpage.
+        h2 Simple. Powerful. Frontend performance metrics the easy way.
 
 
-      section
-        h1 How it works / What is perce.io
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, maiores expedita veritatis amet dignissimos dolorum repellat temporibus repudiandae ullam qui. Tenetur, neque, sed voluptatum perspiciatis impedit laboriosam veritatis dicta voluptate?
+        section
+          h1 How it works
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, maiores expedita veritatis amet dignissimos dolorum repellat temporibus repudiandae ullam qui. Tenetur, neque, sed voluptatum perspiciatis impedit laboriosam veritatis dicta voluptate?
 
-      section
-        h1 Features
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, velit, consequuntur facere vero sed vel impedit iusto nobis officiis dicta maiores repellat quibusdam porro tenetur sequi modi recusandae labore? Fugit.
+        section
+          h1 Features
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, velit, consequuntur facere vero sed vel impedit iusto nobis officiis dicta maiores repellat quibusdam porro tenetur sequi modi recusandae labore? Fugit.
 
-      section
-        h1 Benefits
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, velit, consequuntur facere vero sed vel impedit iusto nobis officiis dicta maiores repellat quibusdam porro tenetur sequi modi recusandae labore? Fugit.
+        section
+          h1 Who we are
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, velit, consequuntur facere vero sed vel impedit iusto nobis officiis dicta maiores repellat quibusdam porro tenetur sequi modi recusandae labore? Fugit.
 
-      section
-        h1 Discover (example metrics)
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, velit, consequuntur facere vero sed vel impedit iusto nobis officiis dicta maiores repellat quibusdam porro tenetur sequi modi recusandae labore? Fugit.
-
-      section
-        h1 Get perce
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, velit, consequuntur facere vero sed vel impedit iusto nobis officiis dicta maiores repellat quibusdam porro tenetur sequi modi recusandae labore? Fugit.
-
-
-      section
-        h1 Stay tuned: sign up for our newsletter
-
-        <!-- Begin MailChimp Signup Form -->
-        <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css"> -->
-        style.
-          input[type="submit"] {
-            border: 2px solid #fff;
-            color: #fff;
-            background: none;
-            padding: 3px 10px;
-            margin-left: 40px;
-            font-family: 'Gentium Basic', serif;
-          }
-
-          input[type="email"] {
-            transition: border-color 1s linear;
-            width: 50%;
-          }
-
-          #mc_embed_signup div.mce_inline_error {
-            display: none !important;
-          }
-
-      div(id="mc_embed_signup")
-        form(action="http://perce.us3.list-manage.com/subscribe/post?u=6ae6fc59ca8723f4d3c492b39&amp;id=c5c0d65d3e", method="post", id="mc-embedded-subscribe-form", name="mc-embedded-subscribe-form", class="validate", target="_blank", novalidate)
-          div(class="mc-field-group")
-            input(type="email", value="", name="EMAIL", class="required email", id="mce-EMAIL", placeholder="your e-mail here *")
-            input(type="submit", value="Subscribe", name="subscribe", id="mc-embedded-subscribe", class="button")
-          div(id="mce-responses", class="clear")
-            div(class="response", id="mce-error-response", style="display:none")
-            div(class="response", id="mce-success-response", style="display:none; margin-top: 20px;")
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          div(style="position: absolute; left: -5000px;")
-            input(type="text",name="b_6ae6fc59ca8723f4d3c492b39_c5c0d65d3e", value="")
-      <!--End mc_embed_signup-->
-
-      section
-        h1 FAQ
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, velit, consequuntur facere vero sed vel impedit iusto nobis officiis dicta maiores repellat quibusdam porro tenetur sequi modi recusandae labore? Fugit.
+        section
+          h1 Contact
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, velit, consequuntur facere vero sed vel impedit iusto nobis officiis dicta maiores repellat quibusdam porro tenetur sequi modi recusandae labore? Fugit.
 
     footer
       p
@@ -108,12 +91,13 @@ html(lang="en")
         | © 2014 perce.io / All rights reserved /
         a(href="") Privacy Policy
 
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-    script.
-      window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    script(src="assets/scripts/plugins.js")
-    script(src="assets/scripts/main.js")
-    script(src="assets/scripts/vendor/mailchimp.js")
+    //- do we really need jquery
+    //- script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+    //- script.
+    //-   window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    script(src="scripts/vendor/snap.svg-min.js")
+    script(src="scripts/main.js")
+    script(src="scripts/vendor/mailchimp.js")
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

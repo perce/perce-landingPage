@@ -1,34 +1,103 @@
 @import 'vendor/normalize'
+@import 'variables'
+
+*
+  -moz-box-sizing border-box
+  box-sizing border-box
 
 html,
 body
   margin 0
   padding 0
+  font-size 62.5%
 
 body
-  background-color #34495e
-  color #fff
-  font-size 24px
+  background-color color-dark-grey
+  color color-white
+  font-size 1.8rem
   font-family 'Gentium Basic', serif
-  transition background-color 6s linear
   overflow hidden
 
 h1,
-h2
+h2,
+nav
   font-family: 'Open Sans', sans-serif
 
-a,
-a:visited
-  color #fff
+a
+  color color-dark-blue
+
+  transition color 0.25s ease-in
+
+  &:hover
+    color color-blue
+
+  &:visited
+    color color-dark-blue
+
+header
+  height 5rem;
+
+  a
+    color color-white
+    text-decoration none
+
+    &:hover
+      color color-red
+
+  nav
+    float right
+
+  ul
+    margin 1rem 0
+
+  li
+    display inline-block
+    margin 0 0 0 2.5rem
+
+.logo
+  display  inline-block
+  margin 1rem 0
+
+.newsletterBox {
+  position absolute
+
+  bottom 10%
+  left 50%
+
+  width 500px
+
+  margin-left -250px
+  padding 1rem
+
+  background-color rgba( color-dark-blue, 0.95 )
+}
+
+.newsletterContainer
+  position relative
+
+  height 40rem
+
+  background-color color-white
+
+  box-shadow 0 0 5px color-black
 
 .pageWrapper
   width 90%
   max-width 1000px
   margin 0 auto
 
+path
+   transition stroke-dashoffset 1.5s ease-in-out
+
 section
   overflow hidden
+
+  padding 2rem
   margin-bottom 40px
+
+  background-color color-white
+
+  color color-dark-blue
 
 input[type="text"],
 input[type="email"]
@@ -42,3 +111,14 @@ input[type="email"]
 footer
   text-align: center;
   margin: 60px;
+
+
+// Helper classes
+.right
+  float right
+
+.left
+  float left
+
+.clearfix
+  clearfix()

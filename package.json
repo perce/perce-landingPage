@@ -8,7 +8,10 @@
     "gulp-notify": "~0.2.0",
     "gulp-stylus": "~0.0.9",
     "gulp-util": "~2.2.9",
-    "gulp-jade": "~0.3.0"
+    "gulp-jade": "~0.3.0",
+    "nib": "~1.0.2",
+    "gulp-svgmin": "~0.4.1",
+    "gulp-uglify": "~0.2.0"
   },
   "devDependencies": {
     "gulp-livereload": "~0.2.0",
