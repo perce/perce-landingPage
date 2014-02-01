@@ -1,5 +1,7 @@
 // Gulpfile.js
 // Require the needed packages
+'use strict';
+
 
 var gulp    = require('gulp');
 var stylus  = require('gulp-stylus');
@@ -23,19 +25,22 @@ gulp.task('stylus', function(){
     .pipe(gulp.dest('./public/styles'))
     .pipe(notify({
       message: "New styles generated!"
-    }));;
+    }));
+
+gulp.task( 'jade', function() {
+  'use strict';
+  gulp.src( './templates/*.jade' )
+    .pipe( jade() )
+    .pipe( gulp.dest('./public/') );
 });
 
-gulp.task('jade', function() {
-  gulp.src('./templates/*.jade')
-    .pipe(jade())
-    .pipe(gulp.dest('./public/'))
-});
-
-gulp.task('livereload', function(){
-    server.listen(35729, function(err){
-        if(err) return console.log(err);
-    });
+gulp.task( 'livereload', function(){
+  'use strict';
+  server.listen( 35729, function( err ){
+    if( err ) {
+      return console.log( err );
+    }
+  });
 });
 
 gulp.task('svg', function() {
@@ -49,7 +54,6 @@ gulp.task('uglify', function() {
     .pipe(uglify({outSourceMaps: true}))
     .pipe(gulp.dest('./public/scripts/'))
 });
-
 
 // Default gulp task to run
 gulp.task('default', function(){
