@@ -26,6 +26,7 @@ gulp.task('stylus', function(){
     .pipe(notify({
       message: "New styles generated!"
     }));
+});
 
 gulp.task( 'jade', function() {
   'use strict';
