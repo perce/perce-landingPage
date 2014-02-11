@@ -95,6 +95,7 @@ header
   padding 2rem 1rem
   margin 0 0 3rem 0
 
+  font-family 'Open Sans', sans-serif;
   text-align center
 
   background-color color-white
@@ -159,9 +160,12 @@ header
       &.fillIt
         fill #E74C3C
 
+    &.bg
+      &.fillIt
+        transition stroke-dashoffset 1s ease-in-out, fill 1s ease-in 1s
 
     &.fillIt
-      transition stroke-dashoffset 1s ease-in-out, fill 1s ease-in 1.5s
+      transition stroke-dashoffset 1s ease-in-out, fill 1s ease-in 2.5s
 
 .pageWrapper
   width 90%
