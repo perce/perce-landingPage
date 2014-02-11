@@ -98,20 +98,26 @@ header
   text-align center
 
   background-color color-white
-  background-image url(../images/newsletterBg.svg)
-  background-size 1000px 400px
-  background-position center 0%
-  background-repeat no-repeat
 
   box-shadow 0 0 5px color-black
+
+  overflow hidden
+
+  svg
+    position absolute
+    top 0
+    left 50%
+    margin-left -500px
+
+  // nesting doesn't work?!?!?!?!?!?
+  path
+    &.fillIt
+      transition stroke-dashoffset 1.5s ease-in-out, fill 1s ease-in 1.5s
 
 .pageWrapper
   width 90%
   max-width 1000px
   margin 0 auto
-
-path
-   transition stroke-dashoffset 1.5s ease-in-out
 
 section
   overflow hidden
