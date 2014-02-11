@@ -117,9 +117,39 @@ header
     left 50%
     margin-left -500px
 
-  path
+  path, rect
+    stroke-width 2
+
+    &.darkBrown &.green, &.yellow, &.red
+      fill transparent
+
+    &.darkBrown
+      stroke #494949
+
+      &.fillIt
+        fill #494949
+
+    &.green
+      stroke #2ECC71
+
+      &.fillIt
+        fill #2ECC71
+
+    &.yellow
+      stroke #F1C40F
+
+      &.fillIt
+        fill #F1C40F
+
+    &.red
+      stroke #E74C3C
+
+      &.fillIt
+        fill #E74C3C
+
+
     &.fillIt
-      transition stroke-dashoffset .75s ease-in-out, fill 1s ease-in 1.5s
+      transition stroke-dashoffset 1s ease-in-out, fill 1s ease-in 1.5s
 
 .pageWrapper
   width 90%
