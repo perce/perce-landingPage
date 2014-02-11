@@ -103,13 +103,20 @@ header
 
   overflow hidden
 
+  .pageWrapper
+    position absolute
+    z-index 1
+    top 2rem
+    right 0
+    bottom 0
+    left 0
+
   svg
     position absolute
     top 0
     left 50%
     margin-left -500px
 
-  // nesting doesn't work?!?!?!?!?!?
   path
     &.fillIt
       transition stroke-dashoffset 1.5s ease-in-out, fill 1s ease-in 1.5s
