@@ -1,5 +1,5 @@
 ( function( document ) {
-  var delay = 150;
+  var delay = 25;
 
   function animate( elements ) {
     elements.forEach( function( element, index ) {
